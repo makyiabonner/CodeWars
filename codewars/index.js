@@ -13,3 +13,11 @@ function sortArray(array) {
   let odd = array.filter((x) => x %2).sort((a,b) => a-b)
   return (array.map(num => num %2 ? odd.shift() : num))
 }
+
+
+//Turn number into string to be able to split them up in a array
+function digitize(n){
+  //code here
+  let arr = n.toString().split('').reverse()
+  return arr.map(num => Number(num))
+}
