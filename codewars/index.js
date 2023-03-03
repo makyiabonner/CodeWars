@@ -85,3 +85,13 @@ function openOrSenior(data){
 }
 //Alternate Solution
 //return data.map(([age,handicap]) => (age >= 55 && handicap > 7)?  'Senior':'Open')
+
+
+//Beginner Series #2 Clock
+function past(h, m, s){
+  //#Happy Coding! ^_^
+  //60 mins in a hour, 60 secs in a min, 1000 millisecs per sec
+   m += (h * 60);
+   s += (m * 60);
+  return s * 1000
+}
