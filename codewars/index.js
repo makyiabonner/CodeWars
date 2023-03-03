@@ -83,3 +83,5 @@ function openOrSenior(data){
   data.map(mem => mem[0] >= 55 && mem[1] > 7? crew.push('Senior') : crew.push('Open'))
   return crew
 }
+//Alternate Solution
+//return data.map(([age,handicap]) => (age >= 55 && handicap > 7)?  'Senior':'Open')
