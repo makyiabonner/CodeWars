@@ -95,3 +95,10 @@ function past(h, m, s){
    s += (m * 60);
   return s * 1000
 }
+
+//Remove exclamation marks
+function removeExclamationMarks(s) {
+  //replace all ! with whitespace
+ return s.replaceAll('!','')
+ 
+}
