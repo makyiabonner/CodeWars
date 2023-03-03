@@ -21,3 +21,10 @@ function digitize(n){
   let arr = n.toString().split('').reverse()
   return arr.map(num => Number(num))
 }
+
+
+//A Needle in the Haystack 8Kyu
+function findNeedle(haystack) {
+  // your code here
+  return `found the needle at position ${haystack.indexOf('needle')}`
+}
