@@ -71,3 +71,15 @@ String.prototype.toJadenCase = function () {
   */
   return this.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
 };
+
+//Categorize New Member
+function openOrSenior(data){
+  //data[0][age, handicap]
+  /* 
+  if age is 55 or greater and handicap is more than 7 return senior
+  else return open
+  */
+  let crew = []
+  data.map(mem => mem[0] >= 55 && mem[1] > 7? crew.push('Senior') : crew.push('Open'))
+  return crew
+}
