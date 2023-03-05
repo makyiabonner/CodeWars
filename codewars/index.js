@@ -102,3 +102,10 @@ function removeExclamationMarks(s) {
  return s.replaceAll('!','')
  
 }
+
+//Find smallest Integer
+class SmallestIntegerFinder{
+  findSmallestInt(args){
+    return Math.min(...args)
+  }
+}
