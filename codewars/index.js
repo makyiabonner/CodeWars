@@ -117,3 +117,12 @@ class SmallestIntegerFinder{
     return a[0]
   }
 }
+
+//Grasshopper - Summation
+var summation = function(num){
+  let tot = [];
+  for(i=0; i < num + 1; i++){
+    tot.push(i);
+  }
+  return tot.reduce((a,b) => a + b, 0)
+}
