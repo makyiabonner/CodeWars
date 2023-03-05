@@ -109,3 +109,11 @@ class SmallestIntegerFinder{
     return Math.min(...args)
   }
 }
+
+//Alternate Solution
+class SmallestIntegerFinder{
+  findSmallestInt(args){
+    let a = args.sort((a,b) => a-b)
+    return a[0]
+  }
+}
