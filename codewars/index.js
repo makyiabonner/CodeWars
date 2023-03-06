@@ -126,3 +126,21 @@ var summation = function(num){
   }
   return tot.reduce((a,b) => a + b, 0)
 }
+
+//Transportation on vacation
+function rentalCarCost(d) {
+  // Your solution here
+  //every day is multiplied by 40
+  //if it is 3 or more days deduct 20
+  //else if it is 7 or more days deduct 50
+  
+  let cost = d * 40;
+  if(d >= 3 && d < 7){
+    cost -= 20;
+  }
+  else if(d >= 7){
+    cost -= 50;
+  }
+  
+  return cost;
+}
