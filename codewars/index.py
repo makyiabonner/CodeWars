@@ -29,4 +29,7 @@ def quarter_of(month):
         return 3
     elif month in range(10,13):
         return 4
-#Solved python question: Quarter of the Year
+
+def sum_array(a):
+    return sum(a)
+#Solved python question: Sum Arrays
