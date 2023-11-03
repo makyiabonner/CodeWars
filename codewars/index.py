@@ -3,3 +3,6 @@ def between(a, b):
 
 def repeat_str(repeat, string):
     return string * repeat
+
+def find_average(numbers):
+    return sum(numbers) / len(numbers) if len(numbers) >= 1 else 0
