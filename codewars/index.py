@@ -43,6 +43,11 @@ def bmi(weight, height):
         return 'Overweight'
     else: return 'Obese'
 
-print(bmi(208,1.8))
-print(bmi(220,1.4))
-#Solved python question: Calculate BMI
+def to_alternating_case(string):
+    result = ''
+    for letter in string:
+        if letter.isupper():
+            result += letter.lower()
+        else: result += letter.upper()
+    return result
+#Solved python question: altERnaTIng cAsE <=> ALTerNAtiNG CaSe
