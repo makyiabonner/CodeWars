@@ -50,4 +50,13 @@ def to_alternating_case(string):
             result += letter.lower()
         else: result += letter.upper()
     return result
-#Solved python question: altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+
+def generate_range(min, max, step):
+    arr = []
+    for num in range(min, max + 1, step):
+        arr.append(num)
+    return arr
+
+    #faster solution return list(range(min, max + 1, step))
+
+#Solved python question: Generate range of integers
